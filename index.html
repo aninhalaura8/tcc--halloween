@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabeçalho com Menu e Ícones</title>
+
+    <!-- Ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Estilos externos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ======== CABEÇALHO ======== -->
+    <header class="cabecalho">
+
+        <!-- Container esquerdo: logo + menu -->
+        <div class="container-esquerda">
+            <!-- Logo -->
+            <a href="index.html" aria-label="Página inicial">
+                <img src="faca.png" alt="Logo Halloween" class="logo">
+            </a>
+
+            <!-- Menu principal -->
+            <nav aria-label="Menu principal">
+                <ul class="lista-menu">
+
+                    <!-- ITEM 1 -->
+                    <li>
+                        <a href="#"> Acesssórios</a>
+                        <ul>
+                            <li><a href="maquiagem.html"><i class="fa-solid fa-wand-sparkles"></i> Makeup</a></li>
+                            <li><a href="mascara.html"><i class="fa-solid fa-mask"></i> Máscara</a></li>
+                            <li><a href="armas.html"><i class="fa-solid fa-triangle-exclamation"></i> Armas</a></li>
+                            
+                        </ul>
+                    </li>
+
+                    <!-- ITEM 2 -->
+                    <li>
+                        <a href="#"> Símbolos</a>
+                        <ul>
+                            <li><a href="gato.html"><i class="fa-solid fa-cat"></i> Black Cat</a></li>
+                            <li><a href="spider.html"><i class="fa-solid fa-spider"></i> Spider</a></li>
+                            <li><a href="fantasma.html"><i class="fa-solid fa-ghost"></i> Fantasmas</a></li>
+                           
+                        </ul>
+                    </li>
+
+                    <!-- ITEM 3 -->
+                    <li>
+                        <a href="#">Tradições</a>
+                        <ul>
+                            <li><a href="filmes.html"><i class="fa-solid fa-face-tired"></i> Filmes de Terror</a></li>
+                            <li><a href="festas.html"><i class="fa-solid fa-broom-ball"></i>Festas e desfiles</a></li>
+                            <li><a href="decoracao.html"><i class="fa-solid fa-broom-ball"></i>Decoração</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- ITEM 4 -->
+                    <li>
+                        <a href="#"> Fantasias</a>
+                        <ul>
+                            <li><a href="ideias.html"><i class="fa-solid fa-hat-wizard"></i> Monstrinhos</a></li>
+                            <li><a href="grupo.html"><i class="fa-solid fa-bottle-droplet"></i> Fantasia em grupo</a></li>
+                            <li><a href="casal.html"><i class="fa-solid fa-book-skull"></i> Casal</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Container direito: ícones de atalho -->
+        <div class="container-direita">
+            <a href="#" aria-label="Favoritos"><i class="fas fa-heart"></i></a>
+            <a href="#" aria-label="Página inicial"><i class="fas fa-home"></i></a>
+            <a href="#" aria-label="Perfil do usuário"><i class="fas fa-user"></i></a>
+        </div>
+    </header>
+
+    <!-- ======== CONTEÚDO PRINCIPAL ======== -->
+    <main class="conteudo">
+
+        <!-- SEÇÃO INTRODUÇÃO -->
+        <section class="introducao" id="inicio">
+            <h1>Bem-vindo ao Mundo do Halloween</h1>
+            <p>
+                Halloween é, para alguns, uma forma de se engajar numa festividade cultural importada,
+                com origens no festival celta do Samhain, que marcava o fim do verão e o período das colheitas,
+                e que ao longo do tempo se misturou com as comemorações católicas do Dia de Todos os Santos.
+            </p>
+            <img src="halloween.jpg" alt="Imagem temática de Halloween">
+        </section>
+
+        <!-- SEÇÃO BENEFÍCIOS -->
+        <section class="beneficios" id="caracteristicas">
+            <div class="card-beneficios">
+                <h2>Características do Halloween</h2>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Halloween (abreviação de All Hallows' Evening ou "Véspera de Todos os Santos").</li>
+                    <li><i class="fa-solid fa-check"></i> 31 de outubro.</li>
+                    <li><i class="fa-solid fa-check"></i> Celebração com raízes em tradições celtas (festival de Samhain), posteriormente influenciada por costumes cristãos.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SEÇÃO RECURSOS -->
+        <section class="recursos" id="recursos">
+            <h2>Recursos Recomendados</h2>
+            <div class="cards">
+
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="abobora.jpg" alt="Abóboras de Halloween">
+                    <h3>Abóboras</h3>
+                    <p>
+                        A abóbora é um dos símbolos mais marcantes do Halloween, utilizada para criar as tradicionais
+                        "lanternas de abóbora" ou "Jack-o'-lantern".
+                    </p>
+                    <a href="abobora.html">Saiba mais</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="bruxa.jpg" alt="Fantasias de bruxa">
+                    <h3>Fantasias</h3>
+                    <p>
+                        As origens da tradição de fantasiar-se no Halloween vêm de festivais celtas antigos, como o Samhain,
+                        onde as pessoas usavam disfarces para enganar e afastar os maus espíritos.
+                    </p>
+                    <a href="bruxa.html">Saiba mais</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="doces.jpg" alt="Doces de Halloween">
+                    <h3>Trick-or-Treat</h3>
+                    <p>
+                        Doces ou travessuras (em inglês, trick or treat) é uma tradição muito popular durante o Halloween,
+                        especialmente nos Estados Unidos, onde crianças se fantasiam e vão de casa em casa dizendo:
+                        "Doces ou travessuras?".
+                    </p>
+                    <a href="doces.html">Saiba mais</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ======== RODAPÉ ======== -->
+    <footer class="rodape">
+        <div class="container-rodape">
+            <p>&copy; 2025 - Todos os direitos reservados.</p>
+            <ul class="links-rodape">
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+

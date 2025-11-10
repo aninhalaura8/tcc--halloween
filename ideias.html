@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Fantasias de Halloween</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Fonte personalizada -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===== FUNDO COM DEGRADÊ ANIMADO ===== */
+        body {
+            background: linear-gradient(135deg, #000000 10%, #25003d 40%, #4b0082 70%, #800080 100%);
+            background-size: 400% 400%;
+            animation: moverDegrade 15s ease infinite;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        @keyframes moverDegrade {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* ===== TÍTULO ===== */
+        h1 {
+            text-align: center;
+            color: #ff5e57;
+            font-size: 2.8em;
+            margin-bottom: 40px;
+            text-shadow: 0 0 15px #ff5e57;
+        }
+
+        /* ===== GRID DE FANTASIAS ===== */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* ===== CARTÕES ===== */
+        .card {
+            background-color: rgba(20, 20, 20, 0.85);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 25px rgba(255, 94, 87, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 94, 87, 0.6);
+        }
+
+        .card img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px 20px;
+        }
+
+        .card-content h2 {
+            font-size: 1.4em;
+            color: #ff5e57;
+            margin-bottom: 10px;
+            text-shadow: 0 0 8px #ff5e57;
+        }
+
+        .card-content p {
+            font-size: 0.95em;
+            line-height: 1.6em;
+        }
+
+        /* ===== RESPONSIVIDADE ===== */
+        @media (max-width: 992px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .card img {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Opções de Fantasias de Halloween</h1>
+
+    <div class="container">
+        <!-- Fantasia 1 -->
+        <div class="card">
+            <img src="bruxinha.jpg" alt="Bruxa Sombria">
+            <div class="card-content">
+                <h2>Bruxa Sombria</h2>
+                <p>Clássica e misteriosa, com chapéu pontudo, vestido preto e maquiagem poderosa.</p>
+            </div>
+        </div>
+
+        <!-- Fantasia 2 -->
+        <div class="card">
+            <img src="dracula.jpg" alt="Vampiro Clássico">
+            <div class="card-content">
+                <h2>Vampiro Clássico</h2>
+                <p>Elegante e assustador, com capa longa, dentes afiados e charme mortal.</p>
+            </div>
+        </div>
+
+        <!-- Fantasia 3 -->
+        <div class="card">
+            <img src="zumbi.jpg" alt="Zumbi Apocalíptico">
+            <div class="card-content">
+                <h2>Zumbi Apocalíptico</h2>
+                <p>Com roupas rasgadas, feridas falsas e andar arrastado, é puro terror ambulante.</p>
+            </div>
+        </div>
+
+        <!-- Fantasia 4 -->
+        <div class="card">
+            <img src="palhacoassustador.jpg" alt="Palhaço Assustador">
+            <div class="card-content">
+                <h2>Palhaço Assustador</h2>
+                <p>Inspirado em filmes de terror, esse palhaço tem sorriso macabro e olhar penetrante.</p>
+            </div>
+        </div>
+
+        <!-- Fantasia 5 -->
+        <div class="card">
+            <img src="neon.jpg" alt="Esqueleto Neon">
+            <div class="card-content">
+                <h2>Esqueleto Neon</h2>
+                <p>Uma opção moderna e brilhante. Ideal para festas com luz negra.</p>
+            </div>
+        </div>
+
+        <!-- Fantasia 6 -->
+        <div class="card">
+            <img src="demonio.jpg" alt="Demônio com Chifres">
+            <div class="card-content">
+                <h2>Demônio com Chifres</h2>
+                <p>Uma fantasia infernal com pintura vermelha, chifres e olhos intensos.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

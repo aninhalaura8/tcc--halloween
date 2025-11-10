@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="abobora.css">
+    <title>Abóboras</title>
+</head>
+<body>
+    <header>
+        <h1>Abóboras</h1>
+        <p>Saiba mais sobre Abóboras</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>O que vamos aprender?</h2>
+            <ul>
+                <li>A abóbora é originária das Américas e foi cultivada por povos indígenas muito antes da chegada dos europeus.</li>
+                <li>Pode ser usada em preparações doces (como doces, bolos e tortas) e salgadas (sopas, purês, refogados).</li>
+                <li>Rica em vitamina A (por causa do betacaroteno), além de conter fibras, vitamina C e antioxidantes.</li>
+            </ul>
+            <button onclick="mostrarDetalhes()">Ver detalhes do curso</button>
+            <div class="detalhes" id="detalhes">
+                <p>Curso 100% gratuito</p>
+            </div>
+        </section>
+
+        <section class="recursos">
+            <h2>Recursos Recomendados</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="2abobora.jpg" alt="Abóbora Jack-o'-lantern">
+                    <h3>Sua Origem</h3>
+                    <p>A tradicional abóbora de Halloween, conhecida como Jack-o'-lantern, tem suas raízes em antigas lendas e práticas folclóricas da Irlanda. Muito antes da abóbora se tornar símbolo do Halloween moderno, os povos celtas celebravam o festival de Samhain, no dia 31 de outubro — uma data que marcava o fim do verão e o início do inverno.</p>
+                </div>
+
+                <div class="card">
+                    <img src="prato.jpg" alt="Abóbora na culinária">
+                    <h3>Abóbora na Culinária</h3>
+                    <p>A abóbora é um dos ingredientes mais versáteis da culinária, sendo amplamente usada em receitas doces e salgadas. Presente em diversas culturas ao redor do mundo, ela se adapta a preparos simples do dia a dia, bem como a pratos mais elaborados.</p>
+                </div>
+
+                <div class="card">
+                    <img src="vitamina.jpg" alt="Abóbora como fonte de vitamina">
+                    <h3>Alimento com boa fonte de vitamina</h3>
+                    <p>A abóbora é um alimento altamente nutritivo e uma excelente fonte de várias vitaminas essenciais para a saúde. Entre as vitaminas mais importantes presentes na abóbora, destaca-se a vitamina A, que aparece na forma de betacaroteno — um pigmento natural que confere à polpa da abóbora sua cor alaranjada característica.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function mostrarDetalhes() {
+            const detalhes = document.getElementById("detalhes");
+            if (detalhes.style.display === "block") {
+                detalhes.style.display = "none";
+            } else {
+                detalhes.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

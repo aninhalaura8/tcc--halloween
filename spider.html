@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasia de Homem-Aranha Assustadora</title>
+    
+    <style>
+        /* ======== ESTILO GERAL ======== */
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 20px;
+            color: #f0f8ff;
+            text-align: center;
+            /* 🔥 Fundo com degradê dinâmico preto e vermelho */
+            background: linear-gradient(135deg, #000000 10%, #2b0000 35%, #5c0000 60%, #8b0000 80%, #ff0000 100%);
+            background-attachment: fixed;
+            background-size: 400% 400%;
+            animation: moverDegrade 10s ease infinite;
+        }
+
+        @keyframes moverDegrade {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* ======== CONTAINER ======== */
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: rgba(20, 20, 20, 0.85);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+            border: 2px solid #ff1a1a;
+        }
+
+        /* ======== TÍTULOS ======== */
+        h1 {
+            color: #ff1a1a;
+            text-shadow: 2px 2px 10px #000;
+            border-bottom: 3px dashed #ff4500;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #ff6347;
+            margin-top: 25px;
+            text-shadow: 1px 1px 6px #000;
+        }
+
+        /* ======== TEXTO ======== */
+        p, ul {
+            text-align: left;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* ======== IMAGEM ======== */
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 4px solid #ff0000;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px #ff0000;
+        }
+
+        /* ======== BOTÃO ======== */
+        .botao-teia {
+            background-color: #990000;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 17px;
+            font-weight: bold;
+            transition: all 0.3s;
+            text-shadow: 0 0 5px #000;
+            box-shadow: 0 0 10px #ff0000;
+        }
+
+        .botao-teia:hover {
+            background-color: #ff0000;
+            box-shadow: 0 0 20px #ff3300;
+            transform: scale(1.05);
+        }
+
+        /* ======== MENSAGEM ======== */
+        #mensagem-arrepio {
+            color: #ff3300;
+            font-weight: bold;
+            margin-top: 20px;
+            text-shadow: 0 0 10px #ff0000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>O Sentido-Aranha Sombrio do Halloween!</h1>
+        
+        <img src="homem-aranha.jpg" alt="Fantasia do Homem-Aranha com tema sombrio para o Halloween">
+        
+        <p>
+            Enquanto o Peter Parker tradicional usa o traje clássico vermelho e azul, o Halloween é a época perfeita para explorar as <strong>versões mais assustadoras</strong> do teioso. 
+            Que tal uma fantasia inspirada no <strong>Venom</strong>, no <strong>Simbionte</strong> ou no traje <strong>Black Suit</strong>? 
+            A escuridão combina perfeitamente com a noite de 31 de Outubro!
+        </p>
+        
+        <h2>Elementos Essenciais da Fantasia Sombria</h2>
+        <ul>
+            <li><strong>A Máscara:</strong> olhos grandes, brancos e vazios para um efeito mais dramático.</li>
+            <li><strong>O Traje:</strong> predominantemente preto e cinza-escuro, com detalhes em vermelho-sangue ou verde-neon.</li>
+            <li><strong>A Teia:</strong> use teias de aranha falsas prateadas e escuras para simular a presença do herói... ou do vilão!</li>
+        </ul>
+        
+        <button class="botao-teia" onclick="ativarSentidoAranha()">
+            🕸️ Ativar Sentido-Aranha
+        </button>
+
+        <p id="mensagem-arrepio">Aguardando perigo...</p>
+    </div>
+
+    <script>
+        function ativarSentidoAranha() {
+            var mensagem = document.getElementById("mensagem-arrepio");
+            var mensagensArrepio = [
+                "🕷️ Arrepio! Há algo rastejando nas sombras!",
+                "⚠️ Perigo detectado: um balde de doces vazio!",
+                "🕸️ O Sentido-Aranha pressente uma presença sombria!",
+                "👁️ Uma energia sombria está se aproximando..."
+            ];
+            var indice = Math.floor(Math.random() * mensagensArrepio.length);
+            mensagem.textContent = mensagensArrepio[indice];
+        }
+    </script>
+
+</body>
+</html>

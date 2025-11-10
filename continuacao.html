@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Abóboras de Halloween</h1>
+        <p>Saiba mais sobre as famosas abóboras de halloween</p>
+    </header>
+
+    <section>
+        <h2>O que vamos descobrir</h2>
+        <ul>
+            <li>Abóboras de Halloween (ou Jack-o'-lantern) são abóboras esculpidas com rostos assustadores ou divertidos, nas quais se coloca uma fonte de luz (geralmente uma vela ou luz elétrica) dentro da cavidade oca para iluminar a decoração de Halloween.</li>
+            <li>As abóboras são um símbolo do Halloween por causa da tradição celta de usar nabos (e depois abóboras nos EUA) esculpidos para afastar espíritos maus durante o festival de outono, e também pela lenda de Jack-o'-lantern, um homem que enganou o diabo e foi condenado a vagar pela Terra com uma lanterna para iluminar seu caminho.</li>
+            <li>A origem das lanternas de abóbora, os "Jack-o'-lantern", está ligada ao folclore irlandês e à lenda de Stingy Jack, um homem que enganou o Diabo e foi condenado a vagar pela Terra com um pedaço de carvão aceso dentro de um nabo oco.</li>
+        </ul>
+
+        <button onclick="mostrarDetalhe()">Ver detalhes do curso</button>
+        <div class="detalhes" id="detalhes">
+            <p>Curso para decorar suas abóboras de halloween e deixar sua casa no clima perfeito no dia das bruxas, 100% gratuito então não perca tempo e venha aprender 👻</p>
+        </div>
+    </section>
+
+    <script>
+        function mostrarDetalhe(){
+            const detalhes = document.getElementById("detalhes");
+            if (detalhes.style.display === "block") {
+                detalhes.style.display = "none";
+            } else{
+                detalhes.style.display = "block";
+            }
+        }
+
+    </script>
+</body>
+</html>

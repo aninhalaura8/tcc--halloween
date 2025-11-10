@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bruxa.css">
+    <title>Fantasias</title>
+</head>
+<body>
+    <header>
+        <h1>Fantasias</h1>
+        <p>Saiba mais sobre as Fantasias de Halloween</p>
+    </header>
+
+    <section class="conteudo">
+        <h2>O que vamos aprender?</h2>
+        <ul>
+            <li>Vamos explorar detalhadamente as fantasias de Halloween mais icônicas e historicamente populares, analisando a fundo as que são consistentemente escolhidas e adaptadas pelas pessoas ao redor do mundo para celebrar o Dia das Bruxas.</li>
+        </ul>
+
+        <button onclick="mostrarDetalhes()">Ver detalhes do curso</button>
+        <div class="detalhes" id="detalhes" style="display: none;">
+            <p>Curso 100% gratuito</p>
+        </div>
+    </section>
+
+    <section class="recursos">
+        <h2>Recursos Recomendados</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="palhaco.jpg" alt="Palhaços Assassinos">
+                <h3>Palhaços Assassinos</h3>
+                <p>A fantasia de Palhaço Assassino não é apenas uma roupa para o Halloween; ela se consolidou como um dos ícones de terror mais populares e duradouros da cultura pop moderna. Sua força reside no contraste extremo entre a alegria esperada do palhaço tradicional e a violência e loucura da versão maligna.</p>
+                <a href="https://brasilescola.uol.com.br/halloween/principais-fantasias-halloween.htm" target="_blank">Saiba mais</a>
+            </div>
+
+            <div class="card">
+                <img src="rainhama.jpg" alt="Bruxas">
+                <h3>Bruxas</h3>
+                <p>A fantasia de Bruxa é, inegavelmente, a mais fundamental e atemporal do Dia das Bruxas. A própria festa, conhecida em português como Dia das Bruxas, atesta a centralidade desta figura. Ela transcendeu séculos de folclore, perseguição religiosa e adaptações da cultura pop, mantendo-se como o arquétipo definitivo do macabro e do místico para o feriado de 31 de outubro.</p>
+                <a href="https://brasilescola.uol.com.br/halloween/principais-fantasias-halloween.htm" target="_blank">Saiba mais</a>
+            </div>
+
+            <div class="card">
+                <img src="vampiro.jpg" alt="Vampiros">
+                <h3>Vampiros</h3>
+                <p>A fantasia de Vampiro é um pilar inabalável do Halloween, rivalizando apenas com as bruxas em termos de popularidade e longevidade. Ela transcende o simples terror, misturando elementos de mito, aristocracia sombria e sensualidade gótica. Vestir-se de vampiro é evocar uma criatura de poder imortal, elegância decadente e uma sede insaciável, tornando-a a escolha perfeita para a "Noite dos Mortos-Vivos".</p>
+                <a href="https://brasilescola.uol.com.br/halloween/principais-fantasias-halloween.htm" target="_blank">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function mostrarDetalhes() {
+            const detalhes = document.getElementById("detalhes");
+            detalhes.style.display = (detalhes.style.display === "block") ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trick-or-Treat - Doces e Tradições</title>
+    <link rel="stylesheet" href="doces.css">
+</head>
+<body>
+
+    <!-- ======= CABEÇALHO ======= -->
+    <header>
+        <h1>Trick-or-Treat</h1>
+        <p>Saiba mais sobre doces</p>
+    </header>
+
+    <!-- ======= CONTEÚDO PRINCIPAL ======= -->
+    <main>
+        <!-- SEÇÃO DE INTRODUÇÃO -->
+        <section class="introducao">
+            <h2>O que vamos aprender?</h2>
+            <ul>
+                <li>
+                    Vamos explorar a história do Halloween, os tipos de doces distribuídos e o contraste dessa festa nos Estados Unidos e no Brasil.
+                </li>
+            </ul>
+
+            <button onclick="mostrarDetalhes()">Ver detalhes do curso</button>
+
+            <div class="detalhes" id="detalhes">
+                <p>🎃 Curso 100% gratuito!</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE RECURSOS -->
+        <section class="recursos">
+            <h2>Recursos Recomendados</h2>
+
+            <div class="cards">
+
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="criancas.jpg" alt="Crianças fantasiadas pedindo doces no Halloween">
+                    <h3>Origem e Evolução do "Trick-or-Treat"</h3>
+                    <p>
+                        A popular frase "Trick-or-Treat" (doce ou travessura), que define o Halloween moderno, é um produto cultural americano do século XX.
+                        No entanto, o costume de se fantasiar e ir de porta em porta pedindo recompensas em troca de uma performance ou oração tem raízes
+                        profundas em tradições europeias que remontam à Idade Média.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="brasil.jpg" alt="Crianças comemorando Halloween no Brasil">
+                    <h3>Tradição Americana e Adaptação Brasileira</h3>
+                    <p>
+                        O Halloween nos EUA é uma tradição histórica e comunitária de grande escala, centrada no "Gostosuras ou Travessuras" nos bairros,
+                        com alto engajamento e casas intensamente decoradas.
+                        <br><br>
+                        No Brasil, é uma influência cultural recente e restrita (mídia e escolas de idiomas), manifestada principalmente em festas à fantasia
+                        em ambientes controlados. O ato de pedir doces é limitado, e a data frequentemente é dedicada à celebração do Dia do Saci,
+                        valorizando o folclore nacional.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="doce2.jpg" alt="Doces variados típicos do Halloween">
+                    <h3>Variedade de Doces</h3>
+                    <p>
+                        No Halloween, especialmente durante a tradição do "Gostosuras ou Travessuras" (Trick-or-Treat) nos Estados Unidos,
+                        a variedade de doces distribuídos é vasta, mas dominada por produtos embalados individualmente e em formatos miniatura.
+                        <br><br>
+                        As principais estrelas da distribuição são as miniaturas de barras de chocolate, preferidas por serem marcas famosas em um formato prático.
+                        As crianças e famílias esperam receber versões fun-size de favoritos como Reese's Peanut Butter Cups, Snickers, Kit Kat, Twix e barras da Hershey's.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ======= SCRIPT ======= -->
+    <script>
+        function mostrarDetalhes() {
+            const detalhes = document.getElementById("detalhes");
+            detalhes.style.display = (detalhes.style.display === "block") ? "none" : "block";
+        }
+    </script>
+
+</body>
+</html>

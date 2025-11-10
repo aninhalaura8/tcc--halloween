@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Top 3 Filmes de Terror</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0d0d0d;
+            color: #f5f5f5;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #e50914;
+            margin-bottom: 40px;
+            font-size: 2.8em;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            width: 320px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h2 {
+            font-size: 1.5em;
+            color: #ff4444;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 0.95em;
+            line-height: 1.6em;
+        }
+
+        .trailer-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #e50914;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .trailer-btn:hover {
+            background-color: #b0060f;
+        }
+
+        @media (max-width: 768px) {
+            .card img {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card img {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Top 3 Filmes de Terror</h1>
+
+    <div class="container">
+        <!-- CORRA -->
+        <div class="card">
+            <img src="filme3.jpg" alt="Corra">
+            <div class="card-content">
+                <h2>Corra (2017)</h2>
+                <p>Chris visita a família de sua namorada e descobre um segredo aterrorizante. Um suspense psicológico com críticas sociais afiadas e atmosfera tensa.</p>
+                <a class="trailer-btn" href="https://www.youtube.com/watch?v=DzfpyUB60YY" target="_blank">Ver trailer</a>
+            </div>
+        </div>
+
+        <!-- A BRUXA -->
+        <div class="card">
+            <img src="filme1.jpg" alt="A Bruxa">
+            <div class="card-content">
+                <h2>A Bruxa (2015)</h2>
+                <p>Uma família puritana enfrenta forças sinistras na floresta em 1630. Um terror atmosférico que explora fanatismo religioso e isolamento.</p>
+                <a class="trailer-btn" href="https://www.youtube.com/watch?v=iQXmlf3Sefg" target="_blank">Ver trailer</a>
+            </div>
+        </div>
+
+        <!-- INVOCAÇÃO DO MAL -->
+        <div class="card">
+            <img src="filme2.jpg" alt="Invocação do Mal">
+            <div class="card-content">
+                <h2>Invocação do Mal (2013)</h2>
+                <p>Baseado em eventos reais, o casal Warren investiga uma presença demoníaca em uma casa isolada. Clássico moderno do terror sobrenatural.</p>
+                <a class="trailer-btn" href="https://www.youtube.com/watch?v=k10ETZ41q5o" target="_blank">Ver trailer</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

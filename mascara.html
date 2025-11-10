@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máscaras de Halloween</title>
+    <style>
+        /* ======== ESTILO GERAL ======== */
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background-color: #0a0a0a;
+            color: #f5f5f5;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            color: orange;
+            text-shadow: 0 0 10px #ff6600;
+        }
+
+        p {
+            color: #ccc;
+        }
+
+        /* ======== CABEÇALHO ======== */
+        header {
+            background: linear-gradient(180deg, #2c003e, #000);
+            text-align: center;
+            padding: 50px 20px;
+            border-bottom: 3px solid orange;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #ffcc80;
+        }
+
+        /* ======== MENU ======== */
+        nav {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 10px;
+            border-bottom: 2px solid orange;
+        }
+
+        nav a {
+            color: #ffcc80;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: orange;
+            text-shadow: 0 0 10px orange;
+        }
+
+        /* ======== SEÇÕES ======== */
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        /* ======== SEÇÃO SOBRE ======== */
+        #sobre {
+            background: linear-gradient(180deg, #1a1a1a, #000);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 20px #800080;
+        }
+
+        #sobre p {
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        /* ======== MODELAGEM DAS MÁSCARAS ======== */
+        .modelos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .mascara {
+            background-color: #1a1a1a;
+            border: 2px solid #ff6600;
+            border-radius: 10px;
+            width: 280px;
+            transition: 0.4s;
+            overflow: hidden;
+            box-shadow: 0 0 10px #ff6600;
+        }
+
+        .mascara img {
+            width: 100%;
+            border-bottom: 2px solid orange;
+        }
+
+        .mascara:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #ff9900;
+        }
+
+        .mascara h3 {
+            text-align: center;
+            margin: 15px 0 5px;
+        }
+
+        .mascara p {
+            text-align: center;
+            padding: 0 10px 15px;
+            font-size: 0.9em;
+        }
+
+        /* ======== RODAPÉ ======== */
+        footer {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 20px;
+            color: #bbb;
+            border-top: 3px solid orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- ======== CABEÇALHO ======== -->
+    <header>
+        <h1>🎭 Máscaras de Halloween 🎃</h1>
+        <p>Descubra modelos, inspirações e dicas para arrasar na noite mais assustadora do ano!</p>
+    </header>
+
+    <!-- ======== MENU ======== -->
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#modelos">Modelos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- ======== SEÇÃO SOBRE ======== -->
+    <section id="sobre">
+        <h2>Sobre o Halloween</h2>
+        <p>O Halloween é uma data mágica, repleta de mistério, diversão e sustos! É o momento em que as ruas se enchem de fantasias criativas, risadas e aquele clima arrepiante que todos adoram. As máscaras são parte essencial dessa tradição, usadas para representar monstros lendários, caveiras sombrias, bruxas misteriosas, fantasmas assustadores e até personagens icônicos do terror. Elas permitem que cada pessoa entre de cabeça nesse universo fantástico e viva, por uma noite, uma experiência única e cheia de imaginação.
+        Neste site, você vai encontrar ideias incríveis para criar o visual perfeito para o seu Halloween — desde inspirações para fantasias e maquiagens assustadoras até tutoriais para confeccionar sua própria máscara. Prepare-se para soltar a criatividade, surpreender seus amigos e garantir uma celebração inesquecível!</p>
+    </section>
+
+    <!-- ======== SEÇÃO MODELOS ======== -->
+    <section id="modelos">
+        <h2>Modelos de Máscaras</h2>
+        <div class="modelos-container">
+
+            <div class="mascara">
+                <img src="mascara1.jpg" alt="Máscara de Caveira">
+                <h3>Máscara de Caveira</h3>
+                <p>O clássico do terror. Perfeita para um visual sombrio e elegante!</p>
+            </div>
+
+            <div class="mascara">
+                <img src="mascara2.jpg" alt="Máscara de Palhaço Assustador">
+                <h3>Máscara de Palhaço</h3>
+                <p>Assuste e divirta ao mesmo tempo com esse ícone do horror moderno.</p>
+            </div>
+
+            <div class="mascara">
+                <img src="mascara3.jpg" alt="Máscara de Monstro">
+                <h3>Máscara de Monstro</h3>
+                <p>Olhos brilhantes e dentes afiados para quem quer causar medo de verdade!</p>
+            </div>
+
+            <div class="mascara">
+                <img src="mascara4.jpg" alt="Máscara de Bruxa">
+                <h3>Máscara de Bruxa</h3>
+                <p>Com nariz pontudo e chapéu sombrio, é perfeita para quem quer um toque de magia e mistério!</p>
+            </div>
+
+            <div class="mascara">
+                <img src="mascara5.jpg" alt="Máscara de Vampiro">
+                <h3>Máscara de Vampiro</h3>
+                <p>Um visual clássico e elegante, com presas afiadas e olhar hipnotizante para encantar — e assustar!</p>
+            </div>
+
+            <div class="mascara">
+                <img src="mascara6.jpg" alt="Máscara de Ghostface">
+                <h3>Máscara de Ghostface</h3>
+                <p>Inspirada no famoso vilão dos filmes de terror, essa máscara é perfeita para quem quer um visual assustador e misterioso.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ======== RODAPÉ ======== -->
+    <footer>
+        <p>👻 Site criado por <strong>Ana Laura</strong> | 2025 | Feliz Halloween! 🎃</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
